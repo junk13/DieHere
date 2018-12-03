@@ -5,5 +5,4 @@
 |____/|_|\___|_| |_|\___|_|  \___|
 
 =================================================================================================
-
-Script para realização semi-automática de ataques DDOS em redes wireless ou em seus hosts
+Ferramente ainda em desenvolvimento, NÃO ESTÁ FUNCIONANDO!
