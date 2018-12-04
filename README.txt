@@ -5,7 +5,7 @@
 |____/|_|\___|_| |_|\___|_|  \___|
 
 ================================================================================================
-   Ferramenta para realização de ataques DDos (Dos) em redes wi-fi ou em seus hosts
+   Ferramenta para realização de ataques Dos em redes wi-fi ou em seus hosts
  - Web site pessoal: https://linux4developers.blogspot.com
  - Repositorio: http://github.com/JumpAMS/DieHere
 
