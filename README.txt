@@ -21,7 +21,7 @@ em seguida já podemos instalar a ferramenta com o comando:
 ~$ sudo ./Instalador.sh
 
 Como usar:
-O objetivo desta ferramenta é ser práticamente 100% automática, ser extremamente facil de ser utilizada e muito simples.
+O objetivo desta ferramenta é ser extremamente facil de ser utilizada e muito simples.
 Para utilizar a ferramenta basta digitar em seu terminal o comando:
 
 ~$ diehere
@@ -29,3 +29,10 @@ Para utilizar a ferramenta basta digitar em seu terminal o comando:
 Então basta seguir as instruções.
 
 OBS: Não me responsabilizo por suas ações!, conhecimento não é crime!
+
+===================================================================================
+ATENÇÃO: Após a finalização do ataque vc precisará digitar o comando:
+
+~$ sudo diedown
+
+para ter acesso novamente a internet.
