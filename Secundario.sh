@@ -1,9 +1,9 @@
 #!/bin/bash
 
 
-sleep 4
+sleep 6
 
 TESTE=`cat matar.txt`
 
 kill $TESTE
-
+rm matar.txt
