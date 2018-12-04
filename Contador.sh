@@ -2,7 +2,7 @@
 
 #Contador
 TEMPOS=0
-for (( loop=0;loop=1000;loop++ )) do
+for (( loop=0;loop=10000;loop++ )) do
 			TEMPOS=$(($TEMPOS+1))				
 			clear
 			echo '[ATENÇÃO] O ataque está sendo realizado!'
