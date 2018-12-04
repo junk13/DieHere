@@ -8,13 +8,16 @@ sudo chmod +x DieHere.sh
 sudo chmod +x Secundario.sh
 sudo chmod +x Terciario.sh
 sudo chmod +x Contador.sh
+sudo chmod +x DieDown.sh
 
 cp $local/Contador.sh /usr/bin/
 cp $local/DieHere.sh /usr/bin/
 cp $local/Secundario.sh /usr/bin/
 cp $local/Terciario.sh /usr/bin/
+cp $local/DieDown.sh /usr/bin/
 
 ln -s /usr/bin/DieHere.sh /usr/bin/diehere
+ln -s /usr/bin/DieDown.sh /usr/bin/diedown
 
 sleep 2
 
