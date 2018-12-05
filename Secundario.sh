@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-sleep 6
+sleep 7
 
 TESTE=`cat matar.txt`
 
